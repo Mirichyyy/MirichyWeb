@@ -1,0 +1,225 @@
+/* ==========================================
+   RESET & BASE STYLES
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f8f9fa;
+    padding-bottom: 60px;
+}
+
+/* Menghilangkan garis pembatas bawaan HTML */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 20px 0;
+}
+
+/* ==========================================
+   NAVIGATION (NAV BAR)
+   ========================================== */
+nav {
+    background-color: #1e293b;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+/* ==========================================
+   HEADER SECTION
+   ========================================== */
+header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: white;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    object-fit: cover;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #bfdbfe;
+}
+
+/* ==========================================
+   MAIN CONTENT & ARTICLES
+   ========================================== */
+article, div {
+    max-width: 800px;
+    margin: 0 auto padding;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+article h2 {
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+article p {
+    font-size: 1.05rem;
+    color: #4b5563;
+}
+
+/* ==========================================
+   TABLE & LISTS (PORTFOLIO/SKILLS)
+   ========================================== */
+table {
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: none !important; /* Menimpa border="1" di HTML */
+    margin-top: 20px;
+}
+
+th {
+    background-color: #0f172a;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding: 12px;
+}
+
+td {
+    padding: 20px;
+    vertical-align: top;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* Styling List di dalam Tabel */
+ul {
+    list-style-position: inside;
+    list-style-type: none; /* Kita ganti dengan bullet kustom */
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #334155;
+    position: relative;
+    padding-left: 15px;
+}
+
+ul li::before {
+    content: "•";
+    color: #3b82f6; /* Warna bullet biru mentereng */
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* ==========================================
+   FORMS (CONTACT PAGE)
+   ========================================== */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="email"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+form input[type="submit"] {
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2563eb;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 20px;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
